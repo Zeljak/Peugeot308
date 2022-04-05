@@ -1,0 +1,254 @@
+@charset "utf-8";
+
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+@import "./_utilities";
+
+@import "../node_modules/bulma/bulma";
+
+//GENERAL
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $family-primary;
+}
+
+.section_pitanje {
+  margin-top: 50px;
+
+  &_fototekst {
+    display: flex;
+  }
+}
+
+/* Flex columns */
+.flex-columns.flex-reverse .row {
+  flex-direction: row-reverse;
+}
+
+.flex-columns {
+  background-color: white;
+  margin-top: -200px;
+}
+.flex-columns .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.flex-columns .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  padding: 0;
+}
+
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+  height: 100%;
+}
+
+.flex-columns img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.flex-columns .column-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px;
+  background-color: white;
+}
+
+.flex-columns h2 {
+  font-size: 25px;
+  line-height: 1.6;
+  font-weight: 500;
+  letter-spacing: 3.25px;
+  text-align: left;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 65px;
+  background-color: #e2ecea;
+  padding: 10px;
+}
+.flex-columns h4 {
+  margin-bottom: 10px;
+}
+.flex-columns p {
+  margin: 20px 0;
+}
+
+// Radio
+.radio {
+  &__wrapper {
+    color: black;
+    display: grid;
+    font-size: 25px;
+    text-align: left;
+    grid-template-columns: min-content auto;
+    grid-gap: 35px;
+    background-color: #fafafa;
+    cursor: pointer;
+    margin-bottom: 40px;
+
+    @include for-tablet {
+      font-size: 20px;
+    }
+
+    @include for-phone {
+      align-items: center;
+      font-size: 18px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__input {
+    display: flex;
+    line-height: 1;
+
+    input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+
+      &:checked + .radio__control {
+        background-color: $darkblue;
+        border: none;
+      }
+    }
+  }
+
+  &__control {
+    display: block;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    border: 5px solid black;
+    transform: translateY(0.25em);
+
+    @include for-tablet {
+      width: 20px;
+      height: 20px;
+      border: 3px solid black;
+      transform: translateY(0.3em);
+    }
+
+    @include for-phone {
+      width: 40px;
+      height: 40px;
+      border: 3px solid black;
+      transform: translateY(0);
+    }
+  }
+}
+
+h3,
+p {
+  font-size: 30px;
+  line-height: 1.83;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin-bottom: 50px;
+}
+
+.box-text {
+  position: relative;
+  text-align: center;
+  color: white;
+
+  img {
+    width: 50%;
+  }
+}
+.centered {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+//FOOTER
+.footer {
+  background-color: $white;
+}
+
+.logos {
+  img {
+    width: 20%;
+  }
+}
+
+// Odgovor A
+.odgovorA {
+  background: url(../_assets/images/Peugeot308_odgovorA.jpg) no-repeat center;
+  height: 100vh;
+  position: relative;
+
+  h1 {
+    font-family: $family-secondary;
+    font-size: 100px;
+    font-weight: 100;
+    line-height: 1;
+    color: white;
+    text-align: right;
+    margin-right: 100px;
+    margin-bottom: 30px;
+  }
+
+  &__wrapper {
+    width: 1088px;
+    box-shadow: rgba(0, 0, 0, 0.16);
+    background-color: rgba(255, 255, 255, 0.7);
+    float: right;
+    padding: 75px;
+    margin-right: 100px;
+
+    h2 {
+      font-family: $family-secondary;
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 1.33;
+      text-align: left;
+      color: black;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-family: $family-primary;
+      font-size: 25px;
+      line-height: 1.4;
+      text-align: left;
+      color: black;
+      text-transform: none;
+    }
+
+    hr,
+    .grey {
+      background-color: $azure;
+      height: 0.5px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+
+    .grey {
+      background-color: gray;
+      margin-top: 30px;
+    }
+  }
+}
