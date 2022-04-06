@@ -73,7 +73,7 @@
     </header>
     <main>
       <!-- SECTION 1 -->
-      <form action="">
+      <form id="kviz">
         <section class="section_pitanje">
           <div class="section_pitanje section_pitanje_wrapper">
             <div class="videoWrapper">
@@ -121,7 +121,7 @@
                           <input
                             type="radio"
                             id="stedljiv"
-                            name="1pitanje"
+                            name="pitanje1"
                             value="stedljiv"
                             class="form__answer"
                           />
@@ -138,7 +138,7 @@
                           <input
                             type="radio"
                             id="sportski"
-                            name="1pitanje"
+                            name="pitanje1"
                             value="sportski"
                             class="form__answer"
                           />
@@ -155,7 +155,7 @@
                           <input
                             type="radio"
                             id="praktican"
-                            name="1pitanje"
+                            name="pitanje1"
                             value="praktican"
                             class="form__answer"
                           />
@@ -169,7 +169,7 @@
                           <input
                             type="radio"
                             id="idealan"
-                            name="1pitanje"
+                            name="pitanje1"
                             value="idealan"
                             class="form__answer"
                           />
@@ -228,7 +228,7 @@
                           <input
                             type="radio"
                             id="oprezna"
-                            name="2pitanje"
+                            name="pitanje2"
                             value="oprezna"
                             class="form__answer"
                           />
@@ -244,7 +244,7 @@
                           <input
                             type="radio"
                             id="pretjecanje"
-                            name="2pitanje"
+                            name="pitanje2"
                             value="pretjecanje"
                             class="form__answer"
                           />
@@ -260,7 +260,7 @@
                           <input
                             type="radio"
                             id="snalazljiva"
-                            name="2pitanje"
+                            name="pitanje2"
                             value="snalazljiva"
                             class="form__answer"
                           />
@@ -276,7 +276,7 @@
                           <input
                             type="radio"
                             id="opustena"
-                            name="2pitanje"
+                            name="pitanje2"
                             value="opustena"
                             class="form__answer"
                           />
@@ -337,7 +337,7 @@
                           <input
                             type="radio"
                             id="prakticnost"
-                            name="3pitanje"
+                            name="pitanje3"
                             value="prakticnost"
                             class="form__answer"
                           />
@@ -353,7 +353,7 @@
                           <input
                             type="radio"
                             id="inovativnost"
-                            name="3pitanje"
+                            name="pitanje3"
                             value="inovativnost"
                             class="form__answer"
                           />
@@ -370,7 +370,7 @@
                           <input
                             type="radio"
                             id="jednostavnost"
-                            name="3pitanje"
+                            name="pitanje3"
                             value="jednostavnost"
                             class="form__answer"
                           />
@@ -384,7 +384,7 @@
                           <input
                             type="radio"
                             id="snaga"
-                            name="3pitanje"
+                            name="pitanje3"
                             value="snaga"
                             class="form__answer"
                           />
@@ -445,7 +445,7 @@
                           <input
                             type="radio"
                             id="uvelike"
-                            name="4pitanje"
+                            name="pitanje4"
                             value="uvelike"
                             class="form__answer"
                           />
@@ -462,7 +462,7 @@
                           <input
                             type="radio"
                             id="sportski_duh"
-                            name="4pitanje"
+                            name="pitanje4"
                             value="sportski_duh"
                             class="form__answer"
                           />
@@ -479,7 +479,7 @@
                           <input
                             type="radio"
                             id="svrsishodan"
-                            name="4pitanje"
+                            name="pitanje4"
                             value="svrsishodan"
                             class="form__answer"
                           />
@@ -493,7 +493,7 @@
                           <input
                             type="radio"
                             id="casual"
-                            name="4pitanje"
+                            name="pitanje4"
                             value="casual"
                             class="form__answer"
                           />
@@ -558,7 +558,7 @@
                           <input
                             type="radio"
                             id="povezanost"
-                            name="5pitanje"
+                            name="pitanje5"
                             value="povezanost"
                             class="form__answer"
                           />
@@ -575,7 +575,7 @@
                           <input
                             type="radio"
                             id="sportski_tim"
-                            name="5pitanje"
+                            name="pitanje5"
                             value="sportski_tim"
                             class="form__answer"
                           />
@@ -592,7 +592,7 @@
                           <input
                             type="radio"
                             id="poslovna_veza"
-                            name="5pitanje"
+                            name="pitanje5"
                             value="poslovna_veza"
                             class="form__answer"
                           />
@@ -609,7 +609,7 @@
                           <input
                             type="radio"
                             id="dobroizlo"
-                            name="5pitanje"
+                            name="pitanje5"
                             value="dobroizlo"
                             class="form__answer"
                           />
@@ -636,6 +636,9 @@
             value="SAZNAJ KAKVA SI VOZAČICA"
           />
         </div>
+
+        <!-- Error -->
+        <p class="error__message is-hidden has-text-centered has-text-danger">Molimo, izaberite barem jedan odgovor.</p>
       </form>
     </main>
 
