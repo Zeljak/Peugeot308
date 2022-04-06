@@ -130,6 +130,7 @@
     line-height: 20px;
     letter-spacing: 2.08px;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   @include for-tablet {
@@ -167,7 +168,6 @@
     @include for-phone {
       font-size: 16px;
       margin-bottom: 20px;
-      padding-top: 10px;
       padding-left: 10px;
     }
   }
@@ -289,7 +289,7 @@ h3 {
   @include for-phone {
     height: 48px;
     width: 84%;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   @include for-tablet {
@@ -312,6 +312,7 @@ h3 {
 
 // Odgovori
 .odgovorA {
+  margin-top: 30%;
   h1 {
     font-family: $family-secondary;
     font-size: 100px;
@@ -321,6 +322,18 @@ h3 {
     text-align: right;
     margin-right: 100px;
     margin-bottom: 30px;
+
+    @include for-phone {
+      font-size: 40px;
+      line-height: 1.14;
+      margin-right: 10px;
+    }
+
+    @include for-tablet {
+      font-size: 70px;
+      line-height: 1.14;
+      margin-right: 50px;
+    }
   }
 
   &__wrapper {
@@ -330,6 +343,22 @@ h3 {
     right: 0;
     padding: 75px;
     margin-right: 100px;
+
+    @include for-phone {
+      width: 300px;
+      padding: 10px;
+      margin-right: 10px;
+    }
+
+    @include for-tablet {
+      width: 600px;
+      padding: 10px;
+      margin-right: 50px;
+    }
+
+    @include for-desktop {
+      width: 800px;
+    }
 
     h2 {
       font-family: $family-secondary;
@@ -377,6 +406,15 @@ h3 {
       line-height: 2;
       color: black;
       font-weight: 100;
+
+      @include for-phone {
+        font-size: 16px;
+        line-height: 25px;
+      }
+      @include for-tablet {
+        font-size: 16px;
+        line-height: 25px;
+      }
     }
 
     hr,
@@ -400,17 +438,33 @@ h3 {
     right: 0;
     z-index: 10;
 
+    @include for-phone {
+      width: 10px;
+    }
+
     &--pink {
       border-left: 17px solid #ff4bd1;
+      @include for-phone {
+        border-left: 5px solid #ff4bd1;
+      }
     }
     &--beige {
       border-left: 17px solid #edd68c;
+      @include for-phone {
+        border-left: 5px solid #edd68c;
+      }
     }
     &--yellow {
       border-left: 17px solid #ddf045;
+      @include for-phone {
+        border-left: 5px solid #ddf045;
+      }
     }
     &--green {
       border-left: 17px solid #52d987;
+      @include for-phone {
+        border-left: 5px solid #52d987;
+      }
     }
   }
 }

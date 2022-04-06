@@ -11613,6 +11613,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     line-height: 20px;
     letter-spacing: 2.08px;
     margin-bottom: 20px;
+    text-align: center;
   }
 }
 @media (min-width: 768px) and (max-width: 1025px) {
@@ -11657,7 +11658,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .radio__wrapper {
     font-size: 16px;
     margin-bottom: 20px;
-    padding-top: 10px;
     padding-left: 10px;
   }
 }
@@ -11790,7 +11790,7 @@ h3 {
   .button--custom {
     height: 48px;
     width: 84%;
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media (min-width: 768px) and (max-width: 1025px) {
@@ -11809,6 +11809,9 @@ h3 {
   width: 20%;
 }
 
+.odgovorA {
+  margin-top: 30%;
+}
 .odgovorA h1 {
   font-family: "Roboto", sans-serif;
   font-size: 100px;
@@ -11819,6 +11822,20 @@ h3 {
   margin-right: 100px;
   margin-bottom: 30px;
 }
+@media (max-width: 767px) {
+  .odgovorA h1 {
+    font-size: 40px;
+    line-height: 1.14;
+    margin-right: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1025px) {
+  .odgovorA h1 {
+    font-size: 70px;
+    line-height: 1.14;
+    margin-right: 50px;
+  }
+}
 .odgovorA__wrapper {
   width: 1088px;
   background-color: rgba(255, 255, 255, 0.7);
@@ -11826,6 +11843,25 @@ h3 {
   right: 0;
   padding: 75px;
   margin-right: 100px;
+}
+@media (max-width: 767px) {
+  .odgovorA__wrapper {
+    width: 300px;
+    padding: 10px;
+    margin-right: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1025px) {
+  .odgovorA__wrapper {
+    width: 600px;
+    padding: 10px;
+    margin-right: 50px;
+  }
+}
+@media (min-width: 1025px) {
+  .odgovorA__wrapper {
+    width: 800px;
+  }
 }
 .odgovorA__wrapper h2 {
   font-family: "Roboto", sans-serif;
@@ -11878,6 +11914,18 @@ h3 {
   color: black;
   font-weight: 100;
 }
+@media (max-width: 767px) {
+  .odgovorA__wrapper span {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1025px) {
+  .odgovorA__wrapper span {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
 .odgovorA__wrapper hr,
 .odgovorA__wrapper .grey {
   background-color: #17b3e7;
@@ -11896,15 +11944,40 @@ h3 {
   right: 0;
   z-index: 10;
 }
+@media (max-width: 767px) {
+  .odgovorA .vl {
+    width: 10px;
+  }
+}
 .odgovorA .vl--pink {
   border-left: 17px solid #ff4bd1;
+}
+@media (max-width: 767px) {
+  .odgovorA .vl--pink {
+    border-left: 5px solid #ff4bd1;
+  }
 }
 .odgovorA .vl--beige {
   border-left: 17px solid #edd68c;
 }
+@media (max-width: 767px) {
+  .odgovorA .vl--beige {
+    border-left: 5px solid #edd68c;
+  }
+}
 .odgovorA .vl--yellow {
   border-left: 17px solid #ddf045;
 }
+@media (max-width: 767px) {
+  .odgovorA .vl--yellow {
+    border-left: 5px solid #ddf045;
+  }
+}
 .odgovorA .vl--green {
   border-left: 17px solid #52d987;
+}
+@media (max-width: 767px) {
+  .odgovorA .vl--green {
+    border-left: 5px solid #52d987;
+  }
 }
