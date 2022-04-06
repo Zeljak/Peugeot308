@@ -14,30 +14,26 @@
   font-family: $family-primary;
 }
 
-html {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 /* set background image per page */
 .backgroundA {
   background: url(../_assets/images/Peugeot308_odgovorA.png) no-repeat center
-    center fixed;
-  height: 100vh;
+    center / cover;
+  height: 127vw;
 }
 .backgroundB {
   background: url(../_assets/images/Peugeot308_odgovorB.png) no-repeat center
-    center fixed;
+    center / cover;
+  height: 127vw;
 }
 .backgroundC {
-  background: url(../_assets/images/Peugeot308_odgovorC.jpg) no-repeat center
-    center fixed;
+  background: url(../_assets/images/Peugeot308_odgovorC.png) no-repeat center
+    center / cover;
+  height: 127vw;
 }
 .backgroundD {
   background: url(../_assets/images/Peugeot308_odgovorD.png) no-repeat center
-    center fixed;
+    center / cover;
+  height: 127vw;
 }
 
 .section_pitanje {
@@ -207,6 +203,37 @@ h3 {
   font-size: 20px;
 }
 
+.button--custom {
+  height: 70px;
+  width: 384px;
+  display: block;
+  font-family: $family-primary;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 52px;
+  border: none;
+  border-radius: 26px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4);
+  color: white;
+  background-color: $azure;
+  padding: 0;
+  text-transform: uppercase;
+  margin: 50px auto;
+  cursor: pointer;
+
+  &:hover {
+    background: white;
+    color: $azure;
+  }
+
+  @include for-phone {
+    height: 40px;
+    width: 80%;
+    line-height: 1;
+  }
+}
+
 //FOOTER
 .footer {
   background-color: $white;
@@ -218,12 +245,8 @@ h3 {
   }
 }
 
-// Odgovor A
+// Odgovori
 .odgovorA {
-  background: url(../_assets/images/Peugeot308_odgovorA.jpg) no-repeat center;
-  height: 100vh;
-  position: relative;
-
   h1 {
     font-family: $family-secondary;
     font-size: 100px;
@@ -237,9 +260,9 @@ h3 {
 
   &__wrapper {
     width: 1088px;
-    box-shadow: rgba(0, 0, 0, 0.16);
     background-color: rgba(255, 255, 255, 0.7);
-    float: right;
+    position: absolute;
+    right: 0;
     padding: 75px;
     margin-right: 100px;
 
@@ -287,8 +310,10 @@ h3 {
   }
 
   .vl {
-    height: 80%;
-    float: right;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    z-index: 10;
 
     &--pink {
       border-left: 17px solid #ff4bd1;
