@@ -11458,6 +11458,28 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   font-family: "Quicksand", sans-serif;
 }
 
+html {
+  background-size: cover;
+}
+
+/* set background image per page */
+.backgroundA {
+  background: url(../_assets/images/Peugeot308_odgovorA.png) no-repeat center center fixed;
+  height: 100vh;
+}
+
+.backgroundB {
+  background: url(../_assets/images/Peugeot308_odgovorB.png) no-repeat center center fixed;
+}
+
+.backgroundC {
+  background: url(../_assets/images/Peugeot308_odgovorC.png) no-repeat center center fixed;
+}
+
+.backgroundD {
+  background: url(../_assets/images/Peugeot308_odgovorA.jpg) no-repeat center center fixed;
+}
+
 .section_pitanje {
   margin-top: 50px;
 }
@@ -11716,6 +11738,13 @@ h3 {
   color: black;
   text-transform: none;
 }
+.odgovorA__wrapper span {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  line-height: 2;
+  color: black;
+  font-weight: 100;
+}
 .odgovorA__wrapper hr,
 .odgovorA__wrapper .grey {
   background-color: #17b3e7;
@@ -11727,4 +11756,20 @@ h3 {
 .odgovorA__wrapper .grey {
   background-color: gray;
   margin-top: 30px;
+}
+.odgovorA .vl {
+  height: 80%;
+  float: right;
+}
+.odgovorA .vl--pink {
+  border-left: 17px solid #ff4bd1;
+}
+.odgovorA .vl--beige {
+  border-left: 17px solid #edd68c;
+}
+.odgovorA .vl--yellow {
+  border-left: 17px solid #ddf045;
+}
+.odgovorA .vl--green {
+  border-left: 17px solid #52d987;
 }
