@@ -272,7 +272,6 @@ h3 {
   letter-spacing: 1px;
   line-height: 52px;
   border: none;
-  border-radius: 26px;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4);
   color: white;
   background-color: $azure;
@@ -307,6 +306,12 @@ h3 {
 .logos {
   img {
     width: 20%;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    @include for-phone {
+      margin-bottom: 50px;
+      margin-top: 25px;
+    }
   }
 }
 
