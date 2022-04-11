@@ -99,16 +99,16 @@ if (document.querySelector('#submit-form')) {
     } else {
       switch (izbor) {
         case 'brojAodg':
-          window.open("https://native.story.hr/preview/peugeot308/odgovorA.html","_self")
+          window.open("https://native.story.hr/peugeot308/odgovorA.html","_self")
           break;
         case 'brojBodg':
-          window.open("https://native.story.hr/preview/peugeot308/odgovorB.html","_self")
+          window.open("https://native.story.hr/peugeot308/odgovorB.html","_self")
           break;
         case 'brojCodg':
-          window.open("https://native.story.hr/preview/peugeot308/odgovorC.html","_self")
+          window.open("https://native.story.hr/peugeot308/odgovorC.html","_self")
           break;
         case 'brojDodg':
-          window.open("https://native.story.hr/preview/peugeot308/odgovorD.html","_self")
+          window.open("https://native.story.hr/peugeot308/odgovorD.html","_self")
           break;
       
         default:
