@@ -63,6 +63,7 @@
 
   @include for-phone {
     margin-top: 0px;
+    // background-color: #3de6d9;
   }
 }
 .flex-columns .row {
@@ -110,6 +111,7 @@
 
   @include for-phone {
     padding: 0;
+    // background-color: #3de6d9;
   }
 }
 
@@ -131,6 +133,7 @@
     letter-spacing: 2.08px;
     margin-bottom: 20px;
     text-align: center;
+    // background-color: #3de6d9;
   }
 
   @include for-tablet {
@@ -168,7 +171,8 @@
     @include for-phone {
       font-size: 16px;
       margin-bottom: 20px;
-      padding-left: 10px;
+      padding: 10px;
+      // background-color: rgba(255, 255, 255, 0.6);
     }
   }
 
@@ -184,6 +188,10 @@
       &:checked + .radio__control {
         background-color: $darkblue;
         border: none;
+
+        @include for-phone {
+          // background-color: #368e87;
+        }
       }
     }
   }

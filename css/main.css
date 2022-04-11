@@ -11658,7 +11658,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .radio__wrapper {
     font-size: 16px;
     margin-bottom: 20px;
-    padding-left: 10px;
+    padding: 10px;
   }
 }
 .radio__input {
